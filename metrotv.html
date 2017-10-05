@@ -1,24 +1,22 @@
-<script type="text/javascript" src="https://cdn.rawgit.com/umar83/jwplayer/f13c05d7/jwplayer-7.9.3/jwplayermetro.js"></script>
-<script>jwplayer.key="a+eOngwyCXC50ZRrd9v0G4YLGhWXO5dbPiK/u1UGgQY="</script>
-							<div id="streaming">Loading the player ...</div>
-							
-							
-							 <script type="text/javascript">
-                            	jwplayer("streaming").setup({
-                            		sources: [{
-                            			file: "http://p.metrotvnews.com/liveedge/metro/default"
-                            		},{
-                            			file: "http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8"
-                            		}],
-                            		rtmp: {
-                            			bufferlength: 3
-                            		},
-                            		fallback: true,
-                                     width: "100%",
-                                     autostart: "true",
-                                     androidhls: true,
-                                     startparam: "start",
-                                     aspectratio: "16:9",
-                                     stretching: "exactfit"
-                            	});
-                            </script>
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5, CSS3 and JavaScript demo</title>
+ <script type="text/javascript" src="https://cdn.rawgit.com/umar83/jwplayer/f13c05d7/jwplayer-7.9.3/jwplayermetro.js"></script>
+<script>jwplayer.key="a+eOngwyCXC50ZRrd9v0G4YLGhWXO5dbPiK/u1UGgQY="</script> 
+</head>
+ <body>
+<div id="streaming">Loading the player ...</div>
+<script type="text/javascript">
+jwplayer("streaming").setup({sources: [{file: "http://p.metrotvnews.com/liveedge/metro/default"},{
+file: "http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8"}],
+rtmp: {bufferlength: 3},
+fallback: true,
+width: "100%",
+autostart: "true",
+androidhls: true,
+startparam: "start",
+aspectratio: "16:9",
+stretching: "exactfit"}); </script>
+</body>
+</html>
